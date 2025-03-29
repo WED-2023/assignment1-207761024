@@ -1,27 +1,31 @@
 nav {
-	background-color: #00bfff;
-	padding: 10px 30px;
+	background: linear-gradient(to right, #00aaff, #007acc);
+	padding: 15px 30px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	position: sticky;
+	top: 0;
+	z-index: 1000;
   }
   
   .logo-container {
 	display: flex;
 	align-items: center;
+	gap: 10px;
   }
   
   .logo {
-	width: 70px;
-	height: 70px;
+	width: 60px;
+	height: 60px;
 	object-fit: cover;
 	border-radius: 50%;
 	border: 2px solid white;
-	margin-right: 10px;
   }
   
   .logo-text {
-	font-size: 22px;
+	font-size: 20px;
 	color: white;
 	font-weight: bold;
   }
@@ -29,13 +33,18 @@ nav {
   .nav-links a {
 	color: white;
 	text-decoration: none;
-	margin: 0 8px;
+	margin: 0 10px;
 	font-weight: 500;
+	transition: all 0.3s ease;
+	padding: 6px 10px;
+	border-radius: 6px;
   }
   
   .nav-links a:hover {
-	text-decoration: underline;
+	background-color: rgba(255, 255, 255, 0.2);
+	color: #1f00cc;
   }
+  
 
   body {
 	background-color: #f0f4f8;
@@ -179,43 +188,57 @@ nav {
   }
 
   form {
-	max-width: 500px;
-	margin: auto;
-	padding: 15px;
-	border-radius: 10px;
-	background-color: #f9f9f9;
-	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+	max-width: 600px;
+	margin: 30px auto;
+	padding: 30px;
+	background: #f4f9fc;
+	border-radius: 15px;
+	box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  }
+  
+  form label {
+	display: block;
+	margin-bottom: 6px;
+	font-weight: 500;
+	color: #007acc;
   }
   
   form input[type="text"],
   form input[type="email"],
-  form textarea {
-	width: 100%;
-	padding: 8px;
-	margin-top: 5px;
-	border: 1px solid #ccc;
-	border-radius: 6px;
-  }
-  
-  form button {
-	background-color: #4CAF50;
-	color: white;
-	padding: 10px 16px;
-	border: none;
-	border-radius: 6px;
-	cursor: pointer;
-	font-size: 16px;
-  }
-  
-  form button:hover {
-	background-color: #45a049;
-  }
-
+  form textarea,
   form select {
-	padding: 6px;
-	border-radius: 5px;
+	width: 100%;
+	padding: 10px 14px;
 	border: 1px solid #ccc;
+	border-radius: 8px;
+	margin-bottom: 20px;
+	font-size: 16px;
+	transition: border-color 0.3s;
   }
+  
+  form input:focus,
+  form textarea:focus {
+	border-color: #00aaff;
+	outline: none;
+  }
+  
+  form button,
+  form input[type="submit"] {
+	background: linear-gradient(to right, #00aaff, #007acc);
+	color: white;
+	border: none;
+	padding: 12px 25px;
+	font-size: 16px;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: background 0.3s;
+  }
+  
+  form button:hover,
+  form input[type="submit"]:hover {
+	background: linear-gradient(to right, #007acc, #00aaff);
+  }
+  
   
   .subheading {
 	font-size: 20px;
@@ -320,5 +343,46 @@ nav {
 	border-radius: 10px;
 	margin-bottom: 10px;
   }
+
+  .playlist-scroll {
+	display: flex;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	gap: 30px;
+	padding: 20px;
+	scroll-behavior: smooth;
+	background-color: #f4f9fc;
+	border-radius: 15px;
+  }
+  
+  .song-card {
+	flex: 0 0 auto;
+	width: 300px;
+	scroll-snap-align: center;
+	background-color: white;
+	border-radius: 12px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	padding: 15px;
+	text-align: center;
+	transition: transform 0.3s ease;
+  }
+  
+  .song-card h3 {
+	font-size: 16px;
+	color: #007acc;
+	margin-bottom: 10px;
+  }
+  
+  .song-card p {
+	font-size: 14px;
+	margin-top: 10px;
+  }
+  
+  .song-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  
   
   
