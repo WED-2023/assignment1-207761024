@@ -8,30 +8,31 @@
 <body>
 <div id="menu">
   <nav>
-    <a href="#about">About Me</a>
-    <a href="#photos">My Photos</a>
-    <a href="#playlist">My Playlist</a>
-    <a href="#like">Like</a>
-    <a href="#qrcode">QR Code</a>
-    <a href="#spa">Q&A</a>
-    <a href="#contact">Contact Me</a>
-  </nav>  
+    <div class="logo-container">
+      <img src="images/moshe.jpg" alt="Moshe Logo" class="logo">
+      <span class="logo-text">Moshe Nosbaum | משה נוסבאום</span>
+    </div>
+    <div class="nav-links">
+      <a href="#about">About Me</a>
+      <a href="#photos">My Photos</a>
+      <a href="#playlist">My Playlist</a>
+      <a href="#like">Like</a>
+      <a href="#qrcoder">QR Code</a>
+      <a href="#spa">Q&A</a>
+      <a href="#contact">Contact Me</a>
+    </div>
+  </nav>
+  
 </div>
 		  
 <section id="about" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+  <h1>Welcome to My Personal Page</h1>
   <h2>About Me</h2>
-  <p>
-    Hello! My name is <strong>Moshe Nussbaum</strong>, and I am a veteran Israeli journalist known for my role as the senior crime and police affairs correspondent at Channel 12 News. I was born in Netanya in 1953 and began my professional journey in the Israel Defense Forces, serving as a paratrooper and later as a tank commander. After completing my military service, I joined the Israel Police, where I served as a detective and eventually transitioned into journalism.
-  </p>
+
+  <p class="subheading">Personal Journey</p>
 
   <p>
-    My career in media started with radio reporting at Kol Israel, and I later became a prominent figure in television journalism when I joined Channel 12 News in 1993. Over the years, I have covered many of the most significant criminal investigations and political scandals in Israeli history. My deep understanding of police work, combined with my calm and professional delivery, has made me a respected and trusted journalist.
+    Hello! My name is <strong>Moshe Nussbaum</strong>, and I am a veteran Israeli journalist known for my role as the senior crime and police affairs correspondent at Channel 12 News.
   </p>
 
   <p>
@@ -41,41 +42,72 @@
   <p>
     In 2022, I was diagnosed with ALS, a neurodegenerative disease that has challenged me physically but has not stopped me from continuing to work and inspire others. I believe in facing life with resilience, dignity, and humor.
   </p>
+
+  <p class="subheading">Career Highlights</p>
+
+  <p>
+    I began my professional journey in the Israel Defense Forces, serving as a paratrooper and later as a tank commander. After completing my military service, I joined the Israel Police, where I served as a detective and eventually transitioned into journalism.
+  </p>
+
+  <p>
+    My media career started with radio reporting at Kol Israel, and I later became a prominent figure in television journalism when I joined Channel 12 News in 1993. Over the years, I have covered major criminal investigations and political scandals in Israeli history. My deep understanding of police work, combined with my calm and professional delivery, has made me a respected and trusted journalist.
+  </p>
+
+  <div class="timeline-container">
+    <input type="radio" name="timeline" id="y1970s" checked>
+    <input type="radio" name="timeline" id="y1980s">
+    <input type="radio" name="timeline" id="y1993">
+    <input type="radio" name="timeline" id="y2020s">
+  
+    <div class="timeline">
+      <label for="y1970s">1970s</label>
+      <label for="y1980s">1980s</label>
+      <label for="y1993">1993</label>
+      <label for="y2020s">2020s</label>
+    </div>
+  
+    <div class="descriptions">
+      <div class="desc y1970s">Served in IDF as a paratrooper and tank commander</div>
+      <div class="desc y1980s">Joined the Israel Police and became a detective</div>
+      <div class="desc y1993">Started media career in Channel 12 News</div>
+      <div class="desc y2020s">Became an iconic figure in Israeli journalism</div>
+    </div>
+  </div>
+  
+
 </section>
+
 
 
 <section id="photos" class="section">
 <h2>My Photos</h2>
-<div class="photo-gallery">
-
-    <div class="photo-item">
-      <img src="images/Moshe_and_Nava.jpg" alt="Moshe and Nava" width="250" />
-      <p>With my beloved wife Nava – our bond keeps me strong every day</p>
-    </div>
-    <div class="photo-item">
-      <img src="images/nephews.jpg" alt="With nephews and family" width="250" />
-      <p>Surrounded by my grandchildren and family during a joyful celebration</p>
-    </div>
-    <div class="photo-item">
-      <img src="images/vacation.webp" alt="Moshe on vacation" width="250" />
-      <p>Enjoying a relaxing vacation – a rare but much-needed break from the newsroom</p>
-    </div>
-  
-
-    <div class="photo-item">
-      <img src="images\latest_interview.jpg" alt="Working in newsroom" width="250" />
-      <p>From my latest interview for Mako</p>
-    </div>
-    <div class="photo-item">
-      <img src="images/Hospital.jpg" alt="Reporting at hospital" width="250" />
-      <p>On the ground reporting from a hospital emergency room</p>
-    </div>
-    <div class="photo-item">
-      <img src="images/Life_award.jpg" alt="Lifetime Achievement Award" width="250" />
-      <p>Receiving the Lifetime Achievement Award for my work in journalism</p>
-    </div>
-
+<div class="photo-gallery-horizontal">
+  <div class="photo-slide">
+    <img src="images/Moshe_and_Nava.jpg" alt="Moshe and Nava">
+    <p>With my beloved wife Nava – our bond keeps me strong every day</p>
+  </div>
+  <div class="photo-slide">
+    <img src="images/nephews.jpg" alt="With nephews and family">
+    <p>Surrounded by my grandchildren and family during a joyful celebration</p>
+  </div>
+  <div class="photo-slide">
+    <img src="images/vacation.webp" alt="Vacation">
+    <p>Enjoying a relaxing vacation – a rare but much-needed break from the newsroom</p>
+  </div>
+  <div class="photo-slide">
+    <img src="images/latest_interview.jpg" alt="Interview">
+    <p>From my latest interview for Mako</p>
+  </div>
+  <div class="photo-slide">
+    <img src="images/Hospital.jpg" alt="Hospital">
+    <p>On the ground reporting from a hospital emergency room</p>
+  </div>
+  <div class="photo-slide">
+    <img src="images/life_award.jpg" alt="Award">
+    <p>Receiving the Lifetime Achievement Award for my work in journalism</p>
+  </div>
 </div>
+
 </section>
 
 <section id="playlist" class="section">

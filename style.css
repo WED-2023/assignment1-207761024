@@ -1,19 +1,39 @@
 nav {
 	background-color: #00bfff;
-	padding: 15px;
+	padding: 10px 30px;
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-between;
   }
   
-  nav a {
+  .logo-container {
+	display: flex;
+	align-items: center;
+  }
+  
+  .logo {
+	width: 70px;
+	height: 70px;
+	object-fit: cover;
+	border-radius: 50%;
+	border: 2px solid white;
+	margin-right: 10px;
+  }
+  
+  .logo-text {
+	font-size: 22px;
+	color: white;
+	font-weight: bold;
+  }
+  
+  .nav-links a {
 	color: white;
 	text-decoration: none;
-	font-weight: bold;
-	margin: 0 10px;
+	margin: 0 8px;
+	font-weight: 500;
   }
   
-  nav a:hover {
+  .nav-links a:hover {
 	text-decoration: underline;
   }
 
@@ -197,6 +217,108 @@ nav {
 	border: 1px solid #ccc;
   }
   
+  .subheading {
+	font-size: 20px;
+	font-weight: 600;
+	color: #005f99;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	text-align: center;
+	border-bottom: 1px solid #00bfff;
+	display: inline-block;
+	padding-bottom: 5px;
+  }
   
+/* הסתרת הרדיו */
+.timeline-container input[type="radio"] {
+	display: none;
+  }
+  
+  /* קו וזמנים */
+  .timeline {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border-bottom: 3px solid #00bfff;
+	padding: 20px 0;
+  }
+  
+  .timeline label {
+	background: #00bfff;
+	color: white;
+	padding: 12px 22px;
+	border-radius: 30px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: 0.3s ease;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  .timeline label:hover {
+	background: #009fdc;
+  }
+  
+  /* תיאור */
+  .descriptions {
+	margin-top: 30px;
+	min-height: 60px;
+	position: relative;
+  }
+  
+  .desc {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	background: #009fdc;
+	color: white;
+	font-weight: bold;
+	padding: 16px 30px;
+	border-radius: 10px;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.5s ease-in-out;
+	box-shadow: 0 8px 18px rgba(0, 0, 0, 0.461);
+  }
+  
+  /* הצגת תוכן לפי הרדיו שנבחר */
+  #y1970s:checked ~ .descriptions .y1970s,
+  #y1980s:checked ~ .descriptions .y1980s,
+  #y1993:checked ~ .descriptions .y1993,
+  #y2020s:checked ~ .descriptions .y2020s {
+	opacity: 1;
+	pointer-events: all;
+  }
+  
+  
+  .photo-gallery-horizontal {
+	display: flex;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	-webkit-overflow-scrolling: touch;
+	gap: 40px;
+	padding: 20px;
+	scroll-behavior: smooth;
+	background-color: #f4f9fc;
+	border-radius: 15px;
+  }
+  
+  .photo-slide {
+	flex: 0 0 auto;
+	scroll-snap-align: center;
+	text-align: center;
+	width: 280px;
+	padding: 10px;
+	background-color: white;
+	border-radius: 12px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .photo-slide img {
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+	margin-bottom: 10px;
+  }
   
   
