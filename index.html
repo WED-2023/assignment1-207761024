@@ -2,16 +2,20 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="style.css" />
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v22.0"></script>
 </head>
 <body>
 <div id="menu">
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#like">Like</a></li>
-<li><a href="#qrcoder">QR code</a></li>
-<li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">Contact Me</a></li>
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#photos">My Photos</a>
+    <a href="#playlist">My Playlist</a>
+    <a href="#like">Like</a>
+    <a href="#qrcode">QR Code</a>
+    <a href="#spa">Q&A</a>
+    <a href="#contact">Contact Me</a>
+  </nav>  
 </div>
 		  
 <section id="about" class="section">
@@ -41,9 +45,6 @@
 
 
 <section id="photos" class="section">
-<br/>
-<br/>
-<br/>
 <h2>My Photos</h2>
 <div class="photo-gallery">
 
@@ -100,96 +101,103 @@
 
 
 <section id="like" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-give me a like
-<br/>
-<br/>
-<br/>
+  <h2>Give Me a Like</h2>
+  <p>Give me a like if you love my page and feel free to share it with others!</p>
+
+  <div class="fb-like" 
+       data-href="https://wed-2023.github.io/assignment1-207761024/" 
+       data-width="" 
+       data-layout="standard" 
+       data-action="like" 
+       data-size="large" 
+       data-share="true">
+  </div>
 </section>
 
+
 <section id="qrcoder" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-scan my code
-<br/>
-<br/>
-<br/>
+  <h2>Scan My Code</h2>
+  <p>Scan the QR code below to visit my website from your phone!
+    Feel free to share it with your friends and family.
+    You can also find me on Facebook and Instagram by searching for my name.
+  </p>
+  <img src="images/qr.png" alt="QR code to my website" width="200" />
 </section>
 
 <section id="spa" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-ans
-<br/>
-<br/>
-<br/>
+  <h2>Q&A</h2>
+
+  <!-- שאלה 1 -->
+  <div class="spa-row">
+    <div class="spa-block" dir="ltr">
+      <h3>1. What are three main differences between Web1, Web2, and Web3?</h3>
+      <ul>
+        <li><strong>Web1</strong> is read-only: users could view content but not interact with it.</li>
+        <li><strong>Web2</strong> is read and write: users create and share content (social media, blogs, YouTube).</li>
+        <li><strong>Web3</strong> is smart and personal: systems use AI and machine learning to adapt to user needs.</li>
+      </ul>
+    </div>
+    <div class="spa-block" dir="rtl">
+      <h3>מהם שלושה הבדלים עיקריים בין Web2, Web1 ו-Web3?</h3>
+      <ul>
+        <li><strong>Web1</strong>:  אינטרנט סטטי – ניתן רק לצפות בתוכן, ללא אפשרות תגובה או שיתוף.</li>
+        <li><strong>Web2</strong>:  אינטרנט אינטראקטיבי – המשתמשים יוצרים ומשתפים תוכן (רשתות חברתיות, בלוגים, YouTube).</li>
+        <li><strong>Web3</strong>:  אינטרנט חכם ואישי – מערכות לומדות את המשתמש ומתאימות לו תוכן בעזרת AI ולמידת מכונה.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- שאלה 2 -->
+  <div class="spa-row">
+    <div class="spa-block" dir="ltr">
+      <h3>2. Use case: Searching for a forgotten song</h3>
+      <ul>
+        <li><strong>Web1</strong>: A static lyrics site listing songs by decade.</li>
+        <li><strong>Web2</strong>: Asking in music forums or social platforms like Reddit.</li>
+        <li><strong>Web3</strong>: AI matches your audio and finds the song, even suggesting similar ones.</li>
+      </ul>
+    </div>
+    <div class="spa-block" dir="rtl">
+      <h3>תרחיש שימוש: חיפוש שיר ששכחת את שמו</h3>
+      <ul>
+        <li><strong>Web1</strong>: אתר סטטי עם רשימות שירים לפי עשורים.</li>
+        <li><strong>Web2</strong>: שאלות בפורומים או רשתות חברתיות כמו Reddit.</li>
+        <li><strong>Web3</strong>: מזמזם את הלחן – בינה מלאכותית מזהה את השיר ומציעה שירים דומים.</li>
+      </ul>
+    </div>
+  </div>
 </section>
 
+
+
 <section id="contact" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-contact me
-<br/>
-<br/>
-<br/>
+  <h2>Contact Me</h2>
+
+  <form>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="smiley">Choose a smiley to include in your message:</label><br>
+    <select id="smiley" name="smiley">
+      <option value="😊">😊</option>
+      <option value="😁">😁</option>
+      <option value="😎">😎</option>
+      <option value="🤗">🤗</option>
+      <option value="🤩">🤩</option>
+      <option value="🥳">🥳</option>
+    </select><br><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+    <button type="submit">Send</button>
+  </form>
 </section>
+
+
 
 
 <script type="text/javascript">
