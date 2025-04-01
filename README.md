@@ -1,9 +1,9 @@
-# Assignment 1 - Personal Website about Third-Age Person | Web Development Course
+# Assignment 1 - Personal Website | Web Development Course
 
 ## About the Website
 This website was created as part of the first assignment in the Web Development course.
 
-The person I chose is **Moshe Nussbaum** – a veteran Israeli crime and police affairs journalist, known for his work on Channel 12 News. I chose him because of his long and inspiring career in journalism and his personal resilience in the face of ALS.
+The subject I chose is **Moshe Nussbaum** – a veteran Israeli crime and police affairs journalist, known for his work on Channel 12 News. I chose him because of his long and inspiring career in journalism and his personal resilience in the face of ALS.
 
 The website includes multiple sections:
 - **About Me** – with a modern layout, subheadings, and visual elements like animated timeline and progress bar.
