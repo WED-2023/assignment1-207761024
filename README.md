@@ -1,4 +1,4 @@
-# Assignment 1 - Personal Website about third age person | Web Development Course
+# Assignment 1 - Personal Website about Third Age Person | Web Development Course
 
 ## About the Website
 This website was created as part of the first assignment in the Web Development course.
