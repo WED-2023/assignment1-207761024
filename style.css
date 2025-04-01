@@ -507,7 +507,17 @@ nav {
 		height: 200px;
 		display: block;
 		border-radius: 8px;
-	  }
+	}
+
+	.parallax {
+		background-attachment: scroll;
+		background-position: center top;
+		min-height: 250px;
+		padding: 40px 20px;
+		font-size: 22px;
+		text-align: center;
+	}
+	  
   }
 
 
