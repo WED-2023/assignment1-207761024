@@ -512,10 +512,15 @@ nav {
 	.parallax {
 		background-attachment: scroll;
 		background-position: center top;
-		min-height: 250px;
-		padding: 40px 20px;
+		background-size: cover; 
+		background-repeat: no-repeat;
+		min-height: 350px; 
+		padding: 60px 20px;
 		font-size: 22px;
 		text-align: center;
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
 	}
 	  
   }
