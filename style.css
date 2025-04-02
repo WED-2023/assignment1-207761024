@@ -454,6 +454,12 @@ nav {
 	padding: 60px 20px;
 	text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
   }
+
+  .parallax-img-mobile {
+	display: none;
+	width: 100%;
+	height: auto;
+  }
   
   
   @media (max-width: 768px) {
@@ -510,18 +516,12 @@ nav {
 	}
 
 	.parallax {
-		background-attachment: scroll;
-		background-position: center top;
-		background-size: cover; 
-		background-repeat: no-repeat;
-		min-height: 350px; 
-		padding: 60px 20px;
-		font-size: 22px;
-		text-align: center;
-		display: flex;
-		align-items: flex-end;
-		justify-content: center;
-	}
+		display: none;
+	  }
+	
+	  .parallax-img-mobile {
+		display: block;
+	  }
 	  
   }
 
